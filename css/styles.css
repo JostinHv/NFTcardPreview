@@ -11,10 +11,11 @@
     --Very-dark-blue-line: hsl(215, 32%, 27%);
 }
 
-body{
+body {
     background: var(--Very-dark-blue-main);
 }
-.main_content{
+
+.main_content {
     font-family: 'Outfit', sans-serif;
     height: 100vh;
     display: flex;
@@ -38,6 +39,8 @@ body{
     display: grid;
     place-items: center;
     position: relative;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .cripto {
@@ -48,7 +51,7 @@ body{
 
 .view_icon {
     display: none;
-    width: 40px;
+    width: 50px;
     position: absolute;
 }
 
@@ -59,6 +62,7 @@ body{
 }
 
 .text_area h1 {
+    cursor: pointer;
     color: white;
     font-size: calc(18px + 0.4vw);
 }
@@ -110,16 +114,36 @@ body{
 }
 
 .creator_profile span {
+    cursor: pointer;
     color: white;
 }
-.attribution{
+
+.attribution {
     color: white;
 }
-.attribution a{
+
+.attribution a {
     text-decoration: none;
 }
+
+.image-area:hover .view_icon {
+    display: block;
+}
+
+.image-area:hover .cripto {
+    transition: all 0.5s;
+}
+
+.text_area h1:hover{
+    color: var(--Cyan);
+}
+
+.creator_profile span:hover {
+    color: var(--Cyan);
+}
+
 @media (max-width: 375px) {
-    .content{
+    .content {
         width: 300px;
     }
 }

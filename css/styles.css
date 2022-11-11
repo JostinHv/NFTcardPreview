@@ -113,7 +113,7 @@ body {
     font-size: calc(10px + 0.5vw);
 }
 
-.creator_profile span {
+.span_text{
     cursor: pointer;
     color: white;
 }
@@ -138,7 +138,7 @@ body {
     color: var(--Cyan);
 }
 
-.creator_profile span:hover {
+.span_text:hover {
     color: var(--Cyan);
 }
 

@@ -39,8 +39,9 @@ body {
     display: grid;
     place-items: center;
     position: relative;
-    border-radius: 10px;
+    border-radius: 12px;
     cursor: pointer;
+    background-color: var(--Cyan);
 }
 
 .cripto {
@@ -132,6 +133,7 @@ body {
 
 .image-area:hover .cripto {
     transition: all 0.5s;
+    filter: blur(2px) opacity(50%);
 }
 
 .text_area h1:hover{
